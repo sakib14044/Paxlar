@@ -1,0 +1,8 @@
+@media(max-width: 768px){
+	.join-btn{
+		display: none;
+	}
+	.sm-btn{
+		display: inherit;
+	}
+}

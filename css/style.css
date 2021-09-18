@@ -1,0 +1,271 @@
+/*font-family: 'Raleway', sans-serif;*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.top-header{
+	background: #efefef;
+	padding: 15px 0;
+}
+.top-header p{
+	color: #7f7f7f;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.top-header ul{
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+}
+.top-header ul li{
+
+}
+.top-header ul li a{	
+	text-decoration: none;	
+	text-transform: uppercase;	
+	font-size: 14px;	
+	color: #7f7f7f;	
+	font-weight: 400;	
+	font-family: 'Montserrat', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-size: 15px;
+    color: #161616;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color: orange;
+}
+.navbar-light .navbar-nav .nav-link::before{
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 0%;
+	background: orange;
+	left: 10%;
+	bottom: 0px;
+	transition: .5s all;
+
+}
+.navbar-light .navbar-nav .nav-link:hover::before{
+	width: 30%;
+}
+.navbar-light .navbar-nav .nav-link::after{
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 0%;
+	background: orange;
+	right: 10%;
+	bottom: 0px;
+	transition: .5s all;
+
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+	width: 30%;
+}
+.sm-btn{
+	display: none;
+}
+.join-btn,.sm-btn{	
+	background: #ff9b1a;	
+	color: #fff;	
+	padding: 6px 13px;
+	border-radius: 30px;	
+	margin-left: 10px;	
+	text-transform: uppercase;	
+	font-size: 14px;
+	transition: .4s all ease-in-out;
+}
+.join-btn:hover,.sm-btn:hover{
+	background: #f7a104;
+	border: 1px solid #f7a104;
+
+}
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    margin: 0;
+    padding: 0;
+}
+.banner{
+	background-image: url(../image/banner.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.banner::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: black;
+	opacity: .6;
+}
+.hg{
+	min-height: 82vh;
+	position: relative;
+}
+.contact-btn{
+	color: #fff;
+	padding: 6px 13px;
+	border-radius: 30px;
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+	border: 1px solid #fff;
+	transition: .4s all ease-in-out;
+}
+.contact-btn:hover{
+	background: #ff9b1a;
+	border: 1px solid #ff9b1a;
+
+}
+.banner h1{
+	font-size: 40px;
+	color: #fff;
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
+	}
+.banner h4{
+	font-size: 19px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+.banner h6{	
+	color: #fff;	
+	font-size: 15px;	
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
+}
+.verify-section{
+
+}
+.verify{
+	padding: 60px 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	transition: .4s all ease-in-out;
+	position: relative;
+	border: 1px solid #8e8a8a;
+	border-radius: 4px;
+	z-index: 0;
+}
+.verify:before{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	left: 0;
+	top: 0;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c89e04+0,ef6a07+100&0.85+0,0.85+100 */
+	z-index: -1;
+	background: -moz-linear-gradient(top,  rgba(200,158,4,0.85) 0%, rgba(239,106,7,0.85) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(200,158,4,0.85) 0%,rgba(239,106,7,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(200,158,4,0.85) 0%,rgba(239,106,7,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9c89e04', endColorstr='#d9ef6a07',GradientType=0 ); /* IE6-9 */
+}
+.verify:hover{
+	background-image: url(../image/feature-image.jpg);
+	background-position: center;
+}
+.verify:hover::before{
+	height: 100%;
+	width: 100%;
+}
+.verify:hover i,.verify:hover h3,.verify:hover p{
+	color: #fff;
+}
+.verify i{
+	font-size: 35px;
+	color: #ff9b1a;
+}
+.verify h3{
+	color: #000000;
+	font-size: 23px;
+	margin-top: 15px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+.verify p{	
+	color: #545454;	
+	font-size: 15px;	
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+.service-section{
+
+}
+.most-use{
+
+}
+.most-use h1{
+	color: #2b2b2b;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+.most-use p{
+	color: #6e6e6e;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+.most-use span{
+	width: 50px;
+	height: 1px;
+	background: #f38b05;
+	display: block;
+	margin: auto;
+}
+.service-content{
+
+}
+.service-content h3{
+	color: #2b2b2b;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
+}
+.service-content p{
+	color: #424242;
+	font-size: 13px;
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
+}
+.service-image{
+	width: 20%;
+	margin: auto;
+	margin-bottom: 8px;
+}
+.service-button{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	background: transparent;
+	border: 1px solid #8e8a8a;
+	border-radius: 30px;
+	padding: 7px 15px;
+	margin-bottom: 30px;
+	color: #2b2b2b;
+	transition: .8s all;
+}
+.service-button:hover{
+	background: orange;
+	color: white;
+	border-color: orange;
+}
